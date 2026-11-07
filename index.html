@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kâbusan Panel</title>
+<style>
+  :root { --zemin:#141110; --kagit:#EDE4D3; --soluk:#a89b8e; --koz:#E8862A; --cizgi:#36302b; }
+  body { margin:0; background:var(--zemin); color:var(--kagit); font:16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:30px; margin:0 0 6px; letter-spacing:.04em; }
+  h2 { font-size:22px; margin:48px 0 8px; padding-top:24px; border-top:1px solid var(--cizgi); }
+  h3 { font-size:17px; margin:24px 0 6px; }
+  a { color:var(--koz); }
+  nav a { margin-right:18px; }
+  .alt { color:var(--soluk); font-size:14px; }
+  footer { margin-top:56px; color:var(--soluk); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>KÂBUSAN PANEL</h1>
+  <p class="alt">A private publishing and analytics tool for the Kâbusan horror short-film channel.</p>
+  <nav><a href="#about">About</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Service</a><a href="#contact">Contact</a></nav>
+
+  <h2 id="about">About</h2>
+  <p>Kâbusan is an independent creator that produces short animated horror films and publishes them on YouTube (<a href="https://www.youtube.com/@kabusan0">@kabusan0</a>), Instagram and TikTok.</p>
+  <p><b>Kâbusan Panel</b> is a desktop tool that runs only on the creator's own computer. It is used exclusively by the channel owner to:</p>
+  <ul>
+    <li>upload the channel's own finished videos to the channel's own YouTube account, with titles, descriptions and tags prepared by the creator, and optionally schedule their publication;</li>
+    <li>view the channel's own statistics (views, likes, comments, subscribers, average view percentage) next to the same episode's statistics on other platforms.</li>
+  </ul>
+  <p>The tool is not distributed, sold or offered to anyone else. It has no public sign-up. The only Google account that uses it is the channel owner's account.</p>
+  <p>This tool uses <b>YouTube API Services</b>. By using it, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
+  <h2 id="privacy">Privacy Policy</h2>
+  <p class="alt">Last updated: 7 November 2026</p>
+  <p>Kâbusan Panel uses YouTube API Services. Google's handling of data is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+
+  <h3>What data the tool accesses</h3>
+  <p>When the channel owner connects a YouTube account, the tool requests these Google OAuth scopes:</p>
+  <ul>
+    <li><code>youtube.upload</code>: to upload the channel's own videos;</li>
+    <li><code>youtube.readonly</code>: to read the channel's own channel and video information (titles, publish dates, view, like and comment counts);</li>
+    <li><code>yt-analytics.readonly</code>: to read the channel's own YouTube Analytics reports (views, average view duration and percentage, shares).</li>
+  </ul>
+  <p>The tool does not access other users' data, does not read comments' authors, and does not access any data that is not related to the connected channel.</p>
+
+  <h3>How the data is used</h3>
+  <p>The data is displayed to the channel owner on their own computer, to compare how each episode performs across platforms and to publish new episodes. It is not used for advertising, profiling, or any other purpose, and it is never sold, shared with or transferred to third parties.</p>
+
+  <h3>How the data is stored</h3>
+  <ul>
+    <li>OAuth tokens are stored only on the channel owner's computer, in a local file outside the project folder. They are never sent anywhere except to Google's own servers when calling the API.</li>
+    <li>The tool keeps a local log of the channel's own view counts (one snapshot per refresh) to show growth over time. This log is stored only on the owner's computer.</li>
+    <li>No data is stored on any server operated by Kâbusan. There is no server: the tool runs at <code>localhost</code>.</li>
+    <li>API data is refreshed regularly. Stored statistics are deleted when the owner disconnects the account or deletes the tool's data folder, and in any case within 30 days of the data no longer being refreshed.</li>
+  </ul>
+
+  <h3>Cookies and device information</h3>
+  <p>The tool does not use cookies for tracking and does not collect device information. It does not store, access or collect information on any user's device other than its own local files on the owner's computer.</p>
+
+  <h3>How to revoke access and delete data</h3>
+  <ul>
+    <li>In the tool: press <b>Disconnect</b> on the YouTube card. This deletes the stored tokens immediately.</li>
+    <li>At Google: remove the tool at <a href="https://security.google.com/settings/security/permissions">Google security settings → Third-party apps with account access</a>.</li>
+    <li>To delete stored statistics, delete the tool's data folder or contact us (below) and we will delete it within 7 days.</li>
+  </ul>
+
+  <h3>Contact</h3>
+  <p>Questions about this policy: <a href="mailto:ch.kabusan@gmail.com">ch.kabusan@gmail.com</a></p>
+
+  <h2 id="terms">Terms of Service</h2>
+  <p class="alt">Last updated: 7 November 2026</p>
+  <ol>
+    <li><b>Who may use the tool.</b> Kâbusan Panel is a private tool used only by the owner of the Kâbusan channel. It is not offered to the public.</li>
+    <li><b>YouTube Terms.</b> The tool uses YouTube API Services. Anyone using the tool agrees to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and acknowledges the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</li>
+    <li><b>Content.</b> Only content owned by the Kâbusan channel is uploaded through the tool. The channel owner is responsible for the content, its rights and its metadata.</li>
+    <li><b>No resale.</b> The tool, and any data obtained through YouTube API Services, is not sold, licensed or shared with third parties.</li>
+    <li><b>Changes.</b> These terms may be updated; the date above shows the latest version.</li>
+  </ol>
+
+  <h2 id="contact">Contact</h2>
+  <p><a href="mailto:ch.kabusan@gmail.com">ch.kabusan@gmail.com</a> · <a href="https://www.youtube.com/@kabusan0">youtube.com/@kabusan0</a></p>
+
+  <footer>Kâbusan Panel is not affiliated with or endorsed by YouTube or Google.</footer>
+</main>
+</body>
+</html>
